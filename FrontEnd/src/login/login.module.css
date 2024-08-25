@@ -1,0 +1,50 @@
+:root{
+    --cor-bg:black;
+    --cor-itens:white;
+}
+
+.container{
+    width: 100vw;
+    height: 100dvh;
+    background-color: var(--cor-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    outline: var(--cor-itens) 1px solid;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+input,button{
+    width: 150px;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    outline: var(--cor-itens) 1px solid;
+    color: var(--cor-itens);
+    margin-block: 20px;
+}
+
+input{
+    padding-inline: 20px;
+}
+
+input:hover, button:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 15px var(--cor-itens);
+    transition: 0.3s;
+}
+
+@media (max-width: 430px) {
+    .login {
+        outline: none; 
+    }
+}
